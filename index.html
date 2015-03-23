@@ -22,59 +22,67 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1>The I Ching (or Site of Changes)</h1>
-        <br>
+        <div class="col-md-6">
+          <h1>The I Ching (or Site of Changes)</h1>
+          <br><br>
+          <table class="table">
+            <tr>
+              <td><button id="coin16" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin17" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin18" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+            <tr>
+              <td><button id="coin13" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin14" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin15" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+            <tr>
+              <td><button id="coin10" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin11" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin12" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+            <tr>
+              <td><button id="coin7" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin8" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin9" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+            <tr>
+              <td><button id="coin4" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin5" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin6" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+            <tr>
+              <td><button id="coin1" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin2" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+              <td><button id="coin3" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
+            </tr>
+          </table>
+          <div><button id="begin" class="btn btn-default" href="#" role="button">Commune with the oracle.</button></div>
+        </div>
+        <div class="col-md-6" id="hexagram-drawing">
+          <div id="instructions">
+            <br><br><br><br><br>
+            <h3>Instructions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lectus, tempor eget nisi et, interdum molestie augue. Vestibulum luctus felis eu diam ornare, vitae eleifend libero auctor. Etiam lobortis eros felis, eu convallis orci finibus sed. Pellentesque quis arcu a risus euismod pharetra in efficitur risus. Quisque porta mi eget nisi luctus, a gravida mi scelerisque. Fusce enim sem, tempus et nibh eleifend, sodales consectetur sapien. Ut bibendum sodales dolor, sed dictum nisl dignissim non. Aenean vestibulum felis ullamcorper nibh sollicitudin imperdiet. Ut semper turpis quis erat molestie, vel tristique erat ultricies. Donec placerat eleifend luctus. Sed gravida orci quis iaculis placerat. Nullam elementum ut diam quis vehicula.</p>
+          </div>
+          <br><br>
+          <table>
+            <tr><td id="line6"></td></tr>
+            <tr><td id="line5"></td></tr>
+            <tr><td id="line4"></td></tr>
+            <tr><td id="line3"></td></tr>
+            <tr><td id="line2"></td></tr>
+            <tr><td id="line1"></td></tr>
+          </table>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="col-md-6">
-        <table class="table">
-          <tr>
-            <th>Coin 1</th>
-            <th>Coin 2</th>
-            <th>Coin 3</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td><button id="coin16" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin17" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin18" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><span id="line6"></span></td>
-          </tr>
-          <tr>
-            <td><button id="coin13" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin14" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin15" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><span id="line5"></span></td>
-          </tr>
-          <tr>
-            <td><button id="coin10" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin11" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin12" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><span id="line4"></span></td>
-          </tr>
-          <tr>
-            <td><button id="coin7" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin8" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin9" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><span id="line3"></span></td>
-          </tr>
-          <tr>
-            <td><button id="coin4" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin5" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin6" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><span id="line2"></span></td>
-          </tr>
-          <tr>
-            <td><button id="coin1" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin2" class="btn btn-default" href="#" role="button" disabled="disabled"> </button></td>
-            <td><button id="coin3" class="btn btn-default" href="#" role="button"> </button></td>
-            <td><p id="line1"></p></td>
-            <!-- -------------- ON-->
-            <!-- ------&nbsp;&nbsp;&nbsp;------ OFF-->
-          </tr>
-        </table>
-        <button id="begin" class="btn btn-default" href="#" role="button">Begin</button>
+      <div class="row">
+        <br><br>
+      </div>
+      <div class="row" id="explanation">
+        <div class="col-md-12" id="hexagram-text">
+
+        </div>
       </div>
     </div>
 

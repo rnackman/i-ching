@@ -1,3 +1,40 @@
-h1 {
-  font-family: 'Times New Roman', serif;
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer);
+
+body {
+  font-family: 'IM Fell Great Primer', serif;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.page-header {
+  border:none;
+}
+
+iframe {
+  border: none;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+iframe h1 {
+  font-family: 'IM Fell Great Primer', serif;
+}
+
+tbody {
+  border: none;
+  border-color: white;
+}
+
+td, th {
+  text-align: center;
+}
+
+#instructions {
+  text-align: center;
+}
+
+#explanation {
+  border-top: solid 2px black;
 }
