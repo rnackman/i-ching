@@ -38,3 +38,9 @@ td, th {
 #explanation {
   border-top: solid 2px black;
 }
+
+.brushstroke {
+  height: 80px;
+  width: 360px;
+  text-align: center;
+}
