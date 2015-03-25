@@ -78,7 +78,7 @@ function determineHexagram(){
       return 0;
     }
   }).join('');
-  readHexagram(Number(simple_results));
+  readHexagram(simple_results);
 }
 
 var hexagrams = {
@@ -340,5 +340,6 @@ var hexagrams = {
   }};
 
 function readHexagram(simple_results){
+  // debugger
   $('#hexagram-text').html("<h1>"+hexagrams[simple_results]["title"]+"</h1><h3>"+hexagrams[simple_results]["text"]+"</h3>");
 }
