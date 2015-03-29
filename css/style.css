@@ -21,6 +21,12 @@ img {
   width: 100%;
 }
 
+a, a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+}
+
 .buttons button {
   display: block;
   margin: auto;
@@ -52,6 +58,16 @@ img {
 
 .coins {
   padding: 40px;
+}
+
+footer {
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 @media screen and (max-width : 320px){

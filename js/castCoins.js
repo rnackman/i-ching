@@ -52,20 +52,23 @@ function revealLine(line_num){
 }
 
 function lineImage(type, line_num){
-  $("#line"+line_num).hide().html("<img src='images/"+type+".jpg'>").fadeIn('slow');
+  var $line = $('#line'+line_num);
+  $line.hide().html("<img src='images/"+type+".jpg'>").fadeIn('slow');
 }
 
 function totalCoins(line_num){
   var third_coin = Number($("#coin"+(line_num * 3)).html());
   var second_coin = Number($("#coin"+(line_num * 3 - 1)).html());
   var first_coin = Number($("#coin"+(line_num * 3 - 2)).html());
-  return (first_coin + second_coin + third_coin);
+  var total = (first_coin + second_coin + third_coin);
+  $('#line'+line_num).attr('line-total', total);
+  return total;
 }
 
 function determineHexagram(){
   var results = [];
   for (var i = 1; i < 7; i++){
-    results.push(totalCoins(i));
+    results.push(Number($('#line'+i).attr('line-total')));
   }
   var simple_results = results.map(function(e){
     if (e === 9 || e === 7){

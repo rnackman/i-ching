@@ -24,48 +24,53 @@
         <h1>The I Ching (or Site of Changes)</h1>
       </header>
       <div class="row" id="instructions">
-        <h3>Instructions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lectus, tempor eget nisi et, interdum molestie augue. Vestibulum luctus felis eu diam ornare, vitae eleifend libero auctor. Etiam lobortis eros felis, eu convallis orci finibus sed. Pellentesque quis arcu a risus euismod pharetra in efficitur risus. Quisque porta mi eget nisi luctus, a gravida mi scelerisque. Fusce enim sem, tempus et nibh eleifend, sodales consectetur sapien. Ut bibendum sodales dolor, sed dictum nisl dignissim non. Aenean vestibulum felis ullamcorper nibh sollicitudin imperdiet. Ut semper turpis quis erat molestie, vel tristique erat ultricies. Donec placerat eleifend luctus. Sed gravida orci quis iaculis placerat. Nullam elementum ut diam quis vehicula.</p>
+<!--         <h3>Instructions</h3>
+ -->        <p>The I Ching is an ancient Chinese oracular text.<br>For centuries, it has provided direction to those who seek guidance.<br>Traditionally one consults the oracle by tossing six sets of three coins.<br>Each coin tossed yields a value, and each set's total value reveals an open or closed line.<br>The six resulting lines comprise the hexagram, a visual reading.<br>There are 64 possible hexagrams, each with its own accompanying interpretation.</p><br>
+      <p>To begin, click the button below. Click each coin as it lights up to reveal your complete hexagram.</p>
       </div>
       <div class="row coins">
-        <div id="line6" class="line">
+        <div id="line6" class="line" line-total=0>
           <div id="coin16" class="coin"><img src="images/coin.png"></div>
           <div id="coin17" class="coin"><img src="images/coin.png"></div>
           <div id="coin18" class="coin"><img src="images/coin.png"></div>
         </div>
-        <div id="line5" class="line">
+        <div id="line5" class="line" line-total=0>
           <div id="coin13" class="coin"><img src="images/coin.png"></div>
           <div id="coin14" class="coin"><img src="images/coin.png"></div>
           <div id="coin15" class="coin"><img src="images/coin.png"></div>
         </div>
-        <div id="line4" class="line">
+        <div id="line4" class="line" line-total=0>
           <div id="coin10" class="coin"><img src="images/coin.png"></div>
           <div id="coin11" class="coin"><img src="images/coin.png"></div>
           <div id="coin12" class="coin"><img src="images/coin.png"></div>
         </div>
-        <div id="line3" class="line">
+        <div id="line3" class="line" line-total=0>
           <div id="coin7" class="coin"><img src="images/coin.png"></div>
           <div id="coin8" class="coin"><img src="images/coin.png"></div>
           <div id="coin9" class="coin"><img src="images/coin.png"></div>
         </div>
-        <div id="line2" class="line">
+        <div id="line2" class="line" line-total=0>
           <div id="coin4" class="coin"><img src="images/coin.png"></div>
           <div id="coin5" class="coin"><img src="images/coin.png"></div>
           <div id="coin6" class="coin"><img src="images/coin.png"></div>
         </div>
-        <div id="line1" class="line">
+        <div id="line1" class="line" line-total=0>
           <div id="coin1" class="coin"><img src="images/coin.png"></div>
           <div id="coin2" class="coin"><img src="images/coin.png"></div>
           <div id="coin3" class="coin"><img src="images/coin.png"></div>
         </div>
       </div>
       <div class="row buttons">
-        <button id="begin" class="btn btn-default" href="#" role="button">Commune with the oracle.</button>
+        <button id="begin" class="btn btn-default" href="#" role="button">Consult the oracle.</button>
       </div>
     </div>
     <div class="row" id="explanation">
       <div id="hexagram-text"></div>
     </div>
+    <footer>
+      <p>All interpretation texts are excerpted and adapted from <a href="http://www.amazon.com/Ching-Book-Changes-Bollingen-General/dp/069109750X/ref=sr_1_1?ie=UTF8&qid=1427652564&sr=8-1&keywords=the+i+ching+wilhelm">Richard Wilhelm's 1950 German translation of the Chinese text</a>, translated into English by Cary F. Baynes and published by Princeton University Press in 1977.<br>This site presents a simplified reading of the I Ching. For more information about the I Ching and for more accurate reading methodology, please consult Wilhelm's comprehensive text. As displayed here, Wilhelm's texts have been edited wherever possible for gender neutrality, which may change the nature of the interpretation.<br>Any comments or additional suggestions <a href="mailto:hello@siteofchanges.com">welcome</a>.</p><br><br>
+      <p>Site and illustrations made in 2015 by <a href="www.rachelnackman.com">Rachel Nackman</a>. See the source code <a href="https://github.com/rnackman/i-ching">here</a>. Feedback is much appreciated!</p>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
