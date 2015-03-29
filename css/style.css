@@ -50,6 +50,10 @@ img {
   border-radius: 100%;
 }
 
+.coins {
+  padding: 40px;
+}
+
 @media screen and (max-width : 320px){
   body {
     padding: 5%;
@@ -67,8 +71,4 @@ img {
   #explanation {
     padding: 10%;
   }
-}
-
-.coins {
-  padding: 40px;
 }
