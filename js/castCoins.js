@@ -14,7 +14,7 @@ function addCoinListeners(){
 
 function addBeginListener(){
   $('#begin').click(function(){
-    $('#begin').attr('disabled', 'disabled');
+    $('#begin').hide();
     coinOn($('#coin1'));
     // $('#instructions').fadeOut('slow').remove();
   });
