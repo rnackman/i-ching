@@ -1,22 +1,23 @@
 'use-strict'
 
 $(document).ready(function(){
-  addCoinListeners();
   addBeginListener();
 })
 
-function addCoinListeners(){
-  $("[id*='coin']").click(function(){
+function addCoinListener(num){
+  $('#coin'+num).addClass('on');
+  $('#coin'+num).on('click', function(){
     var coin = this;
     tossCoin(coin);
-  });
+    addCoinListener(num+1);
+    $('#coin'+num).off();
+  })
 }
 
 function addBeginListener(){
   $('#begin').click(function(){
     $('#begin').hide();
-    coinOn($('#coin1'));
-    // $('#instructions').fadeOut('slow').remove();
+    addCoinListener(1);
   });
 }
 
@@ -32,9 +33,6 @@ function tossCoin(coin){
   var result = Math.floor(Math.random() * (4 - 2) + 2);
   $(coin).html(result);
 
-  coinOff(coin);
-  coinOn(next_coin);
-
   if (current_coin_num % 3 === 0) {
     var line_num = (current_coin_num / 3);
     revealLine(line_num);
@@ -42,18 +40,6 @@ function tossCoin(coin){
   if (current_coin_num === 18) {
     determineHexagram();
   }
-}
-
-function coinOff(coin){
-  $(coin).attr('disabled', 'disabled');
-  $(coin).removeClass('btn btn-success');
-  $(coin).addClass('btn btn-warning');
-}
-
-function coinOn(coin){
-  $(coin).removeAttr('disabled');
-  $(coin).removeClass('btn btn-default');
-  $(coin).addClass('btn btn-success');
 }
 
 function revealLine(line_num){
