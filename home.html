@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>The I Ching (or Site of Changes)</title>
+    <title>I Ching | Site of Changes</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -20,69 +20,51 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>The I Ching (or Site of Changes)</h1>
-          <br><br>
-          <table class="table">
-            <tr>
-              <td><button id="coin16" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin17" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin18" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-            <tr>
-              <td><button id="coin13" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin14" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin15" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-            <tr>
-              <td><button id="coin10" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin11" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin12" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-            <tr>
-              <td><button id="coin7" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin8" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin9" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-            <tr>
-              <td><button id="coin4" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin5" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin6" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-            <tr>
-              <td><button id="coin1" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin2" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-              <td><button id="coin3" class="btn btn-default" href="#" role="button" disabled="disabled">?</button></td>
-            </tr>
-          </table>
-          <div><button id="begin" class="btn btn-default" href="#" role="button">Commune with the oracle.</button></div>
+      <header>
+        <h1>The I Ching (or Site of Changes)</h1>
+      </header>
+      <div class="row" id="instructions">
+        <h3>Instructions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lectus, tempor eget nisi et, interdum molestie augue. Vestibulum luctus felis eu diam ornare, vitae eleifend libero auctor. Etiam lobortis eros felis, eu convallis orci finibus sed. Pellentesque quis arcu a risus euismod pharetra in efficitur risus. Quisque porta mi eget nisi luctus, a gravida mi scelerisque. Fusce enim sem, tempus et nibh eleifend, sodales consectetur sapien. Ut bibendum sodales dolor, sed dictum nisl dignissim non. Aenean vestibulum felis ullamcorper nibh sollicitudin imperdiet. Ut semper turpis quis erat molestie, vel tristique erat ultricies. Donec placerat eleifend luctus. Sed gravida orci quis iaculis placerat. Nullam elementum ut diam quis vehicula.</p>
+      </div>
+      <div class="row coins">
+        <div id="line6" class="line">
+          <button id="coin16" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin17" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin18" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5" id="hexagram-drawing">
-          <div id="instructions">
-            <br><br><br><br><br>
-            <h3>Instructions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lectus, tempor eget nisi et, interdum molestie augue. Vestibulum luctus felis eu diam ornare, vitae eleifend libero auctor. Etiam lobortis eros felis, eu convallis orci finibus sed. Pellentesque quis arcu a risus euismod pharetra in efficitur risus. Quisque porta mi eget nisi luctus, a gravida mi scelerisque. Fusce enim sem, tempus et nibh eleifend, sodales consectetur sapien. Ut bibendum sodales dolor, sed dictum nisl dignissim non. Aenean vestibulum felis ullamcorper nibh sollicitudin imperdiet. Ut semper turpis quis erat molestie, vel tristique erat ultricies. Donec placerat eleifend luctus. Sed gravida orci quis iaculis placerat. Nullam elementum ut diam quis vehicula.</p>
-          </div>
-          <br><br>
-            <div id="line6" class="brushstroke"></div>
-            <div id="line5" class="brushstroke"></div>
-            <div id="line4" class="brushstroke"></div>
-            <div id="line3" class="brushstroke"></div>
-            <div id="line2" class="brushstroke"></div>
-            <div id="line1" class="brushstroke"></div>
+        <div id="line5" class="line">
+          <button id="coin13" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin14" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin15" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+        </div>
+        <div id="line4" class="line">
+          <button id="coin10" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin11" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin12" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+        </div>
+        <div id="line3" class="line">
+          <button id="coin7" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin8" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin9" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+        </div>
+        <div id="line2" class="line">
+          <button id="coin4" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin5" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin6" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+        </div>
+        <div id="line1" class="line">
+          <button id="coin1" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin2" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
+          <button id="coin3" class="btn btn-default" href="#" role="button" disabled="disabled">?</button>
         </div>
       </div>
-      <div class="row">
-        <br><br>
+      <div class="row buttons">
+        <button id="begin" class="btn btn-default" href="#" role="button">Commune with the oracle.</button>
       </div>
-      <div class="row" id="explanation">
-        <div class="col-md-12" id="hexagram-text"></div>
-      </div>
-      <div class="container">
-        <div class="row"><br></div>
-      </div>
+    </div>
+    <div class="row" id="explanation">
+      <div id="hexagram-text"></div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

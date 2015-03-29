@@ -16,7 +16,7 @@ function addBeginListener(){
   $('#begin').click(function(){
     $('#begin').attr('disabled', 'disabled');
     coinOn($('#coin1'));
-    $('#instructions').fadeOut('slow').remove();
+    // $('#instructions').fadeOut('slow').remove();
   });
 }
 
@@ -66,14 +66,14 @@ function revealLine(line_num){
 }
 
 function lineImage(type, line_num){
-  $("#line"+line_num).hide().html("<img src='images/"+type+".jpg' style='width: 100%;'>").fadeIn('slow');
+  $("#line"+line_num).hide().html("<img src='images/"+type+".jpg'>").fadeIn('slow');
 }
 
 function totalCoins(line_num){
-  var third_coin = "#coin"+(line_num * 3);
-  var second_coin = "#coin"+(line_num * 3 - 1);
-  var first_coin = "#coin"+(line_num * 3 - 2);
-  return (Number($(first_coin).html()) + Number($(second_coin).html()) + Number($(third_coin).html()));
+  var third_coin = Number($("#coin"+(line_num * 3)).html());
+  var second_coin = Number($("#coin"+(line_num * 3 - 1)).html());
+  var first_coin = Number($("#coin"+(line_num * 3 - 2)).html());
+  return (first_coin + second_coin + third_coin);
 }
 
 function determineHexagram(){
@@ -350,6 +350,5 @@ var hexagrams = {
   }};
 
 function readHexagram(simple_results){
-  // debugger
   $('#hexagram-text').html("<h1>"+hexagrams[simple_results]["title"]+"</h1><h3>"+hexagrams[simple_results]["text"]+"</h3>");
 }

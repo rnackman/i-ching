@@ -1,46 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer);
-
 body {
   font-family: 'IM Fell Great Primer', serif;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
 }
 
 h3 {
   font-weight: 400;
 }
 
-.page-header {
-  border:none;
+header {
+  padding-bottom: 50px;
 }
 
-iframe {
-  border: none;
-  margin: 0;
-  box-sizing: inherit;
+img {
+  width: 100%;
+  height: 16%;
 }
 
-iframe h1 {
-  font-family: 'IM Fell Great Primer', serif;
+.buttons button {
+  display: block;
+  margin: auto;
 }
 
-tbody {
-  border: none;
-  border-color: white;
+.line {
+  width: 50%;
+  margin: auto;
 }
 
-td, th {
-  text-align: center;
+.line button {
+  margin: auto;
 }
 
-#instructions {
-  text-align: center;
-}
-
-#explanation {
-  border-top: solid 2px black;
-}
-
-.brushstroke {
-  height: 80px;
-  width: 360px;
-  text-align: center;
+.coins {
+  padding: 40px;
 }
