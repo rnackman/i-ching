@@ -15,9 +15,7 @@ function addCoinListeners(){
 function addBeginListener(){
   $('#begin').click(function(){
     $('#begin').attr('disabled', 'disabled');
-    $('#coin1').removeAttr('disabled');
-    $('#coin1').removeClass('btn btn-default');
-    $('#coin1').addClass('btn btn-success');
+    coinOn($('#coin1'));
     $('#instructions').fadeOut('slow').remove();
   });
 }
@@ -34,12 +32,8 @@ function tossCoin(coin){
   var result = Math.floor(Math.random() * (4 - 2) + 2);
   $(coin).html(result);
 
-  $(coin).attr('disabled','disabled');
-  $(coin).removeClass('btn btn-success');
-  $(coin).addClass('btn btn-warning');
-  $(next_coin).removeAttr('disabled');
-  $(next_coin).removeClass('btn btn-default');
-  $(next_coin).addClass('btn btn-success');
+  coinOff(coin);
+  coinOn(next_coin);
 
   if (current_coin_num % 3 === 0) {
     var line_num = (current_coin_num / 3);
@@ -50,13 +44,29 @@ function tossCoin(coin){
   }
 }
 
+function coinOff(coin){
+  $(coin).attr('disabled', 'disabled');
+  $(coin).removeClass('btn btn-success');
+  $(coin).addClass('btn btn-warning');
+}
+
+function coinOn(coin){
+  $(coin).removeAttr('disabled');
+  $(coin).removeClass('btn btn-default');
+  $(coin).addClass('btn btn-success');
+}
+
 function revealLine(line_num){
   var total = totalCoins(line_num);
   if (total === 9 || total === 7) {
-    $("#line"+line_num).hide().html("<img src='images/closed.jpg' style='width: 100%;'>").fadeIn('slow');
+    lineImage("closed", line_num);
   } else if (total === 8 || total === 6) {
-    $("#line"+line_num).hide().html("<img src='images/open.jpg' style='width: 100%;'>").fadeIn('slow');
+    lineImage("open", line_num);
   }
+}
+
+function lineImage(type, line_num){
+  $("#line"+line_num).hide().html("<img src='images/"+type+".jpg' style='width: 100%;'>").fadeIn('slow');
 }
 
 function totalCoins(line_num){
